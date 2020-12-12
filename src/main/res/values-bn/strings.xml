@@ -181,7 +181,7 @@
     <string name="date_oldest">তারিখ (পুরনো আগে)</string>
     <string name="size_largest">সাইজ(বড় আগে)</string>
     <string name="size_smallest">সাইজ(ছোট আগে)</string>
-    <string name="file_type">ফাইলের প্রকার</string>
+    <string name="file_type_a_z">ফাইলের প্রকার</string>
     <string name="title_shares">শেয়ার</string>
     <string name="title_apps">অ্যাপস</string>
     <string name="hint_username">ব্যবহারকারী নাম</string>

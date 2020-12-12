@@ -1,6 +1,5 @@
 package org.amahi.anywhere.fragment;
 
-import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,7 +22,7 @@ import org.amahi.anywhere.util.Preferences;
 
 public class FileSortOptionsDialogFragment extends BottomSheetDialogFragment {
 
-    private TextView textSortNameAsc, textSortNameDes, textSortTimeAsc, textSortTimeDes, textSortSizeAsc, textSortSizeDes, textSortFileType;
+    private TextView textSortNameAsc, textSortNameDes, textSortTimeAsc, textSortTimeDes, textSortSizeAsc, textSortSizeDes, textSortFileTypeAsc, textSortFileTypeDes;
 
     @Nullable
     @Override
@@ -64,8 +63,9 @@ public class FileSortOptionsDialogFragment extends BottomSheetDialogFragment {
 
         textSortSizeDes = view.findViewById(R.id.text_sort_size_des);
 
-        textSortFileType = view.findViewById(R.id.text_sort_type);
+        textSortFileTypeAsc = view.findViewById(R.id.text_sort_type_asc);
 
+        textSortFileTypeDes = view.findViewById(R.id.text_sort_type_des);
     }
 
     private void setUpClickListeners() {
@@ -83,7 +83,9 @@ public class FileSortOptionsDialogFragment extends BottomSheetDialogFragment {
 
         textSortSizeDes.setOnClickListener(v -> setOptionAndDismiss(FileSortOption.SIZE_DES));
 
-        textSortFileType.setOnClickListener(v -> setOptionAndDismiss(FileSortOption.FILE_TYPE));
+        textSortFileTypeAsc.setOnClickListener(v -> setOptionAndDismiss(FileSortOption.FILE_TYPE_ASC));
+
+        textSortFileTypeDes.setOnClickListener(v -> setOptionAndDismiss(FileSortOption.FILE_TYPE_DES));
     }
 
     private void setUpItemSelected() {
@@ -110,8 +112,11 @@ public class FileSortOptionsDialogFragment extends BottomSheetDialogFragment {
             case FileSortOption.SIZE_DES:
                 setItemChecked(textSortSizeDes);
                 break;
-            case FileSortOption.FILE_TYPE:
-                setItemChecked(textSortFileType);
+            case FileSortOption.FILE_TYPE_ASC:
+                setItemChecked(textSortFileTypeAsc);
+                break;
+            case FileSortOption.FILE_TYPE_DES:
+                setItemChecked(textSortFileTypeDes);
                 break;
 
         }

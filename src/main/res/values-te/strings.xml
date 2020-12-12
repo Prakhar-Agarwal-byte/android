@@ -193,5 +193,5 @@
    <string name="notification_offline_download_paused">ఇంటర్నెట్ కోసం వేచి ఉంది</string>
    <string name="preference_entry_server_connection_local">LAN</string>
    <string name="title_no_server">సర్వర్‌లు లేవు</string>
-   <string name="file_type">ఫైల్ రకం</string>
+   <string name="file_type_a_z">ఫైల్ రకం</string>
 </resources>

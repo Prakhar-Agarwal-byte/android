@@ -207,6 +207,6 @@
     <string name="date_oldest">Fecha (el más antiguo primero)</string>
     <string name="size_largest">Tamaño (el más grande primero)</string>
     <string name="size_smallest">Tamaño (el más pequeño primero)</string>
-    <string name="file_type">Tipo de archivo</string>
+    <string name="file_type_a_z">Tipo de archivo</string>
 
 </resources>

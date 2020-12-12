@@ -190,6 +190,6 @@
     <string name="date_oldest">तारीख (पुराना पहले)</string>
     <string name="size_largest">आकार (बड़ा पहले)</string>
     <string name="size_smallest">आकार (छोटा पहले)</string>
-    <string name="file_type">फाइल का प्रकार</string>
+    <string name="file_type_a_z">फाइल का प्रकार</string>
 
 </resources>

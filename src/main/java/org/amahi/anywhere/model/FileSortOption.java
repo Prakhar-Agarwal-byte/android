@@ -11,7 +11,8 @@ public class FileSortOption {
     public static final int TIME_DES = 3;
     public static final int SIZE_ASC = 4;
     public static final int SIZE_DES = 5;
-    public static final int FILE_TYPE = 6;
+    public static final int FILE_TYPE_ASC = 6;
+    public static final int FILE_TYPE_DES = 7;
 
     @Types
     private int type;
@@ -25,7 +26,7 @@ public class FileSortOption {
         return type;
     }
 
-    @IntDef({NAME_ASC, NAME_DES, TIME_ASC, TIME_DES, SIZE_ASC, SIZE_DES, FILE_TYPE})
+    @IntDef({NAME_ASC, NAME_DES, TIME_ASC, TIME_DES, SIZE_ASC, SIZE_DES, FILE_TYPE_ASC, FILE_TYPE_DES})
     public @interface Types {
     }
 }

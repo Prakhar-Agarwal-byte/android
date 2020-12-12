@@ -261,7 +261,7 @@
     <string name="date_oldest">Datum (älteste zuerst)</string>
     <string name="size_largest">Größe (größte zuerst)</string>
     <string name="size_smallest">Größe (kleinste zuerst)</string>
-    <string name="file_type">Dateityp</string>
+    <string name="file_type_a_z">Dateityp</string>
 
 </resources>
 

@@ -83,14 +83,24 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/text_sort_type"
+            android:id="@+id/text_sort_type_asc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="@string/file_type"
+            android:text="@string/file_type_a_z"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_sort_type_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/file_type_z_a"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

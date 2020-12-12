@@ -713,8 +713,11 @@ public class ServerFilesFragment extends Fragment implements
             case FileSortOption.SIZE_DES:
                 return new FileSizeDesComparator();
 
-            case FileSortOption.FILE_TYPE:
-                return new FileTypeComparator();
+            case FileSortOption.FILE_TYPE_ASC:
+                return new FileTypeAscComparator();
+
+            case FileSortOption.FILE_TYPE_DES:
+                return new FileTypeDscComparator();
 
             default:
                 return null;
@@ -1072,11 +1075,20 @@ public class ServerFilesFragment extends Fragment implements
         }
     }
 
-    private static final class FileTypeComparator implements Comparator<ServerFile> {
+    private static final class FileTypeAscComparator implements Comparator<ServerFile> {
 
         @Override
         public int compare(ServerFile firstFile, ServerFile secondFile) {
             return firstFile.getMime().compareTo(secondFile.getMime());
+        }
+
+    }
+
+    private static final class FileTypeDscComparator implements Comparator<ServerFile> {
+
+        @Override
+        public int compare(ServerFile firstFile, ServerFile secondFile) {
+            return -firstFile.getMime().compareTo(secondFile.getMime());
         }
 
     }
