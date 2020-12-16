@@ -15,7 +15,8 @@
         android:gravity="center_vertical"
         android:text="@string/title_upload_list"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/upload_options_list"
