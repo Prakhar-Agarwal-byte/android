@@ -1,6 +1,5 @@
 package org.amahi.anywhere.fragment;
 
-import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;

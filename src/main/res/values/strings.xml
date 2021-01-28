@@ -345,4 +345,8 @@
     <string name="size_smallest">Size (smallest first)</string>
     <string name="file_type">File type</string>
 
+    <string name="last_opened">Last opened</string>
+    <string name="audio_title">Audio Title</string>
+    <string name="audio_subtitle">Audio Subtitle</string>
+
 </resources>

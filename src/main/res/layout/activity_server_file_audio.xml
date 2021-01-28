@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:maxLines="1"
-                android:text="Audio Title"
+                android:text="@string/audio_title"
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/text_medium" />
 
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:maxLines="1"
-                android:text="Audio Subtitle"
+                android:text="@string/audio_subtitle"
                 android:textColor="@color/secondary_text"
                 android:textSize="@dimen/text_micro" />
 
