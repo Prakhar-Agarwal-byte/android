@@ -22,6 +22,7 @@ public class ProgressDialogFragment extends DialogFragment {
         dialog.setCancelable(false);
         dialog.setIndeterminate(false);
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        dialog.setProgressNumberFormat(null);
         return dialog;
     }
 
