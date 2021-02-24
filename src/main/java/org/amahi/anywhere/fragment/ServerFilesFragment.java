@@ -1011,8 +1011,16 @@ public class ServerFilesFragment extends Fragment implements
 
     @Override
     public void isListEmpty(boolean empty) {
-        if (getView().findViewById(R.id.none_text) != null)
-            getView().findViewById(R.id.none_text).setVisibility(empty ? View.VISIBLE : View.GONE);
+        TextView tvNoneText = getView().findViewById(R.id.none_text);
+        if (tvNoneText != null) {
+            if (empty && searchView.isIconified()) {
+                tvNoneText.setVisibility(View.GONE);
+            } else if (empty) {
+                tvNoneText.setVisibility(View.VISIBLE);
+            } else {
+                tvNoneText.setVisibility(View.GONE);
+            }
+        }
     }
 
 
