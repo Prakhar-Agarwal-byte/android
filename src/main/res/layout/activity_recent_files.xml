@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:textAlignment="center"
                 android:text="@string/message_empty_recent_files"
                 android:textSize="@dimen/text_large"
                 android:textStyle="bold" />
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:textAlignment="center"
                 android:text="@string/message_notice_visit_some"
                 android:textSize="@dimen/text_small" />
 

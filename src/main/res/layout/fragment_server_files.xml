@@ -54,8 +54,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="@string/message_no_search_result"
+            android:textAlignment="center"
             android:textSize="@dimen/text_medium"
             android:visibility="gone" />
 
@@ -69,7 +70,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:textAlignment="center"
                 android:text="@string/message_empty_files"
                 android:textSize="@dimen/text_large"
                 android:textStyle="bold" />
@@ -81,8 +82,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:text="@string/message_notice_create_some"
+                android:textAlignment="center"
                 android:textSize="@dimen/text_small" />
 
         </LinearLayout>
