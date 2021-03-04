@@ -29,24 +29,21 @@ import android.accounts.OperationCanceledException;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
-import com.google.android.material.textfield.TextInputEditText;
-
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.DialogFragment;
+import androidx.preference.EditTextPreferenceDialogFragmentCompat;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
-import androidx.fragment.app.DialogFragment;
-import androidx.preference.EditTextPreferenceDialogFragmentCompat;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
+import com.google.android.material.textfield.TextInputEditText;
 import com.squareup.otto.Subscribe;
 
 import org.amahi.anywhere.AmahiApplication;
@@ -347,7 +344,6 @@ public class UploadSettingsFragment extends PreferenceFragmentCompat implements
         }
         getSharePreference().setEntries(shareNames);
         getSharePreference().setEntryValues(shareNames);
-        getSharePreference().setEnabled(true);
 
         String selectedShare = getSharePreference().getValue();
         if (selectedShare != null) {
@@ -412,7 +408,7 @@ public class UploadSettingsFragment extends PreferenceFragmentCompat implements
         if (preference instanceof CustomEditTextPreference) {
             f = EditTextPreferenceDialog.newInstance(preference.getKey());
         } else if (preference.getKey().equals(getSharePreference().getKey())) {
-            if (getHdaPreference().getValue() != null) {
+            if (getSharePreference().getEntries() != null && getSharePreference().getEntryValues() != null) {
                 super.onDisplayPreferenceDialog(preference);
             } else {
                 Snackbar.make(getView(), getString(R.string.preference_message_no_server), Snackbar.LENGTH_SHORT).show();
